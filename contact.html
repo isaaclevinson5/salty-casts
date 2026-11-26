@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Share your shore fishing catches or ask a gear question on Salty Casts.">
+  <title>Catch Log &amp; Contact | Salty Casts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">Salty<span>Casts</span></a>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gear.html">Gear &amp; Rigging</a></li>
+          <li><a href="lures.html">Lures &amp; Species</a></li>
+          <li><a href="spots.html">Spots &amp; Tides</a></li>
+          <li><a href="contact.html" class="active">Catch Log &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Share Your Catch or Ask a Question</h2>
+      <p>Have a question about matching a rod to your favorite lures, or want to log a recent shore catch? Fill out the form below!</p>
+
+      <form action="#" method="post" onsubmit="alert('Thanks for submitting to Salty Casts!'); return false;">
+        <div class="form-group">
+          <label for="angler-name">Your Name</label>
+          <input type="text" id="angler-name" name="angler-name" placeholder="e.g., Alex Rivera" required>
+        </div>
+
+        <div class="form-group">
+          <label for="angler-email">Email Address</label>
+          <input type="email" id="angler-email" name="angler-email" placeholder="angler@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option value="gear">Starter Rod / Reel / Line Advice</option>
+            <option value="lures">Lure Selection &amp; Retrieval</option>
+            <option value="catch-report">Submit a Catch Report</option>
+            <option value="feedback">Website Feedback</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message or Catch Details</label>
+          <textarea id="message" name="message" rows="5" placeholder="Share species caught, lure used, tide conditions, or your question..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit Entry</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Salty Casts | Beginner Surf &amp; Shore Fishing Guide. Created for CIS 300.</p>
+  </footer>
+
+</body>
+</html>
